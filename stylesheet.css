@@ -1,0 +1,34 @@
+#main {
+  text-align: center;
+  background: url(images/leaves.jpg) no-repeat;
+  height: 35.8em;
+  background-size: 100% 100%;
+  padding: 0;
+}
+
+ul li {
+ padding: 0;
+ margin: 0;
+ list-style: none;
+}
+
+#tree {
+  height: 10em;
+}
+
+.textbox {
+  margin-right: 5px;
+  color: grey;
+}
+
+h1 {
+  font-family: sans-serif;
+}
+ #pad {
+   display: inline-block;   
+ }
+
+ #listContainer {
+   display: inline-block;
+   text-align: left;
+ }

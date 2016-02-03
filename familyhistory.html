@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+  <link rel="stylesheet" href="stylesheet.css" />
+  <body id="main">
+
+    <div ng-app="familyApp" ng-controller="familyCtrl">
+      <br/>
+      <h1>My Family History List</h1>
+      <img id="tree" alt="tree" src="images/tree.jpg" />
+      <h3>Add a person to your family!</h3>
+      <input class="textbox" type="text" ng-model="person">
+      <input class="textbox" type="text" ng-model="father">
+      <input class="textbox" type="text" ng-model="mother">
+      <button ng-click="addNew()">Add New</button>
+      <br/>
+      <br/>
+      <div id="pad">
+      </div>
+      <div id="listContainer">
+        <ul>
+          <li ng-repeat="x in people">
+            <input type="checkbox" ng-model="x.check">
+            <span>{{x.person + ', ' + x.father + ', ' + x.mother}}</span>
+          </li>
+        </ul>
+      </div>
+      <br/>
+      <button ng-click="removeMarked()">Remove Marked</button>
+    </div>
+
+    <script src="familyController.js"></script>
+  </body>
+</html>
